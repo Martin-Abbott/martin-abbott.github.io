@@ -90,11 +90,11 @@ screen.orientation.addEventListener("change", () => {
 const resizeLoop = () => {
 	controls.update();
 	renderer.render(scene, camera);
-	gsap.to(scene.rotation, {
-		x: -mouse.y * 0.5,
-		y: mouse.x * 0.5,
-		duration: 1,
-	});
+	// gsap.to(scene.rotation, {
+	// 	x: -mouse.y * 0.5,
+	// 	y: mouse.x * 0.5,
+	// 	duration: 1,
+	// });
 	window.requestAnimationFrame(resizeLoop);
 };
 
