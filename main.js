@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-// import { gsap } from "./scripts/gsap.min.js";
 
 const dims = {
 	width: document.documentElement.clientWidth,
@@ -78,30 +77,13 @@ addEventListener("mousemove", (event) => {
 });
 
 screen.orientation.addEventListener("change", () => {
-	// window.location.reload();
-	dims.width = document.documentElement.clientWidth;
-	dims.height = document.documentElement.clientHeight;
-	console.log(dims.width, dims.height);
-	renderer.setSize(dims.width, dims.height);
-	camera.updateProjectionMatrix();
-	camera.aspect = dims.width / dims.height;
+	window.location.reload();
 });
 
 const resizeLoop = () => {
 	controls.update();
 	renderer.render(scene, camera);
-	// gsap.to(scene.rotation, {
-	// 	x: -mouse.y * 0.5,
-	// 	y: mouse.x * 0.5,
-	// 	duration: 1,
-	// });
 	window.requestAnimationFrame(resizeLoop);
 };
 
 resizeLoop();
-
-// const timeline = gsap.timeline({ defaults: { duration: 1.5 } });
-
-// timeline.fromTo([earth.scale], { x: 0, y: 0, z: 0 }, { x: 1, y: 1, z: 1 });
-// timeline.fromTo(".intro", { opacity: 0 }, { opacity: 1 });
-// timeline.fromTo("h2, .about", { opacity: 0 }, { opacity: 1 });
