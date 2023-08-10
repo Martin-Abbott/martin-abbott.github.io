@@ -1,10 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { gsap } from "gsap";
-import vertexShader from "./shaders/vertex.glsl?raw";
-import fragmentShader from "./shaders/fragment.glsl?raw";
-import atmosVertex from "./shaders/atmosVertex.glsl?raw";
-import atmosFragment from "./shaders/atmosFragment.glsl?raw";
 
 const dims = {
 	width: document.documentElement.clientWidth,
@@ -20,30 +16,12 @@ const scene = new THREE.Scene();
 
 const earth = new THREE.Mesh(
 	new THREE.SphereGeometry(3, 64, 64),
-	new THREE.ShaderMaterial({
-		vertexShader,
-		fragmentShader,
-		uniforms: {
-			earthMap: {
-				value: new THREE.TextureLoader().load("./img/earth-map.jpg"),
-			},
-		},
+	new THREE.MeshBasicMaterial({
+		map: new THREE.TextureLoader().load("./img/earth-map.jpg"),
 	})
 );
 
 scene.add(earth);
-
-const atmosphere = new THREE.Mesh(
-	new THREE.SphereGeometry(3.3, 70, 70),
-	new THREE.ShaderMaterial({
-		vertexShader: atmosVertex,
-		fragmentShader: atmosFragment,
-		blending: THREE.AdditiveBlending,
-		side: THREE.BackSide,
-	})
-);
-
-scene.add(atmosphere);
 
 const starGeometry = new THREE.BufferGeometry();
 
