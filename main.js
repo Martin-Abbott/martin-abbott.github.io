@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { gsap } from "gsap/dist";
+import { gsap } from "gsap";
 
 const dims = {
 	width: document.documentElement.clientWidth,
