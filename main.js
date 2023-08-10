@@ -102,10 +102,6 @@ resizeLoop();
 
 const timeline = gsap.timeline({ defaults: { duration: 1.5 } });
 
-timeline.fromTo(
-	[earth.scale, atmosphere.scale],
-	{ x: 0, y: 0, z: 0 },
-	{ x: 1, y: 1, z: 1 }
-);
+timeline.fromTo([earth.scale], { x: 0, y: 0, z: 0 }, { x: 1, y: 1, z: 1 });
 timeline.fromTo(".intro", { opacity: 0 }, { opacity: 1 });
 timeline.fromTo("h2, .about", { opacity: 0 }, { opacity: 1 });
