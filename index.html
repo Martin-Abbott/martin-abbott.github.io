@@ -3,36 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Martin Abbott" />
 		<meta name="description" content="Martin Abbott's developer portfolio" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Martin's World</title>
+		<title>Martin's Portfolio</title>
 	</head>
 	<body>
-		<canvas class="webgl"></canvas>
-		<h1>Hi, I'm Martin</h1>
-		<p class="intro">Welcome to my world!</p>
-		<p class="intro-2">
-			There's plenty being added to this site all the time, so be sure to visit
-			again soon!
-		</p>
-		<h2>About Me</h2>
-		<p class="about">
-			I'm a software developer, and former design engineer who loves problem
-			solving.
-			<br />
-			<br />
-			I'm currently seeking a position as a junior developer, so feel free to
-			reach out to me if you have any suitable positions!
-		</p>
-		<script type="importmap">
-			{
-				"imports": {
-					"three": "https://cdn.skypack.dev/three@0.142.0/build/three.module",
-					"three/": "https://cdn.skypack.dev/three@0.142.0/"
-				}
-			}
-		</script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
-		<script type="module" src="main.js"></script>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
 	</body>
 </html>
