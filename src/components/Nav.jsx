@@ -21,9 +21,9 @@ const Nav = () => {
 	return (
 		<nav
 			id="nav"
-			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed"
+			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed top-0 z-10"
 		>
-			<button className="text-3xl ml-1.5 px-16 z-10 hover:scale-125 duration-300">
+			<button className="text-3xl ml-1.5 px-16 hover:scale-125 duration-300">
 				<Link to="Home" smooth delay={100} duration={300}>
 					MA
 				</Link>
