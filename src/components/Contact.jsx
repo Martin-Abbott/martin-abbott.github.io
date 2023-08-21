@@ -11,12 +11,13 @@ const Contact = () => {
 			.sendForm(
 				"default_service",
 				"template_l3k3u6q",
-				form.current,
+				contactForm.current,
 				"Qi2bXyfh-OkyoyBCg"
 			)
 			.then(
 				(result) => {
 					console.log(result.text);
+					console.log(result);
 				},
 				(error) => {
 					console.log(error.text);
@@ -25,14 +26,17 @@ const Contact = () => {
 	};
 
 	return (
-		<section id="Contact" className="text-center mb-20">
+		<section
+			id="Contact"
+			className="text-center my-20 min-h-[80vh] flex flex-col place-items-center place-content-around"
+		>
 			<h2 className="text-5xl font-bold py-12">Contact Me</h2>
 			<form
 				ref={contactForm}
 				onSubmit={sendEmail}
 				className="flex flex-wrap justify-evenly p-2 text-black border rounded-2xl w-[85vw] max-w-[600px] self-center m-auto"
 			>
-				<section className="p-2">
+				<section className="p-4">
 					<label className="p-2">Name: </label>
 					<input
 						type="text"
@@ -42,7 +46,7 @@ const Contact = () => {
 						className="p-2 m-auto border rounded-lg"
 					/>
 				</section>
-				<section className="p-2">
+				<section className="p-4">
 					<label className="p-2">Email: </label>
 					<input
 						type="email"
@@ -52,7 +56,7 @@ const Contact = () => {
 						className="p-2 m-auto border rounded-lg"
 					/>
 				</section>
-				<section className="p-2 w-full flex">
+				<section className="p-4 w-full flex">
 					<label className="p-2">Message: </label>
 					<textarea
 						name="message"
