@@ -3,7 +3,7 @@ import Portrait1 from "../assets/ma-portrait-1.jpeg";
 
 const Home = () => {
 	return (
-		<section id="home" className="flex flex-wrap py-32 justify-evenly">
+		<section id="Home" className="flex flex-wrap py-32 justify-evenly">
 			<article id="home-text" className="self-center">
 				<h1 className="text-5xl text-center font-bold p-2">Hi, I'm Martin</h1>
 				<p className="p-2 text-center">I write software</p>

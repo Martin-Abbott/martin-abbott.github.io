@@ -19,7 +19,7 @@ const Footer = () => {
 
 	return (
 		<footer
-			id="footer"
+			id="Footer"
 			className="flex justify-around items-center w-full h-16 text-white  bg-black font-bold fixed bottom-0 text-center"
 		>
 			{footerLinks.map((link) => {

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { BiDotsVertical, BiX } from "react-icons/bi";
+import { Link } from "react-scroll";
 
 const Nav = () => {
 	const [visibility, setVisibility] = useState(false);
@@ -22,7 +23,11 @@ const Nav = () => {
 			id="nav"
 			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed"
 		>
-			<button className="text-3xl ml-1.5 px-16 z-10">MA</button>
+			<button className="text-3xl ml-1.5 px-16 z-10">
+				<Link to="Home" smooth delay={100} duration={300}>
+					MA
+				</Link>
+			</button>
 			<ul className="hidden md:flex flex-auto text-center text-xl">
 				{navLinks.map((link) => {
 					return (
@@ -30,7 +35,9 @@ const Nav = () => {
 							key={link.id}
 							className="cursor-pointer flex-auto px-6 text-white hover:scale-125 duration-300"
 						>
-							{link.text}
+							<Link to={link.text} smooth delay={100} duration={300}>
+								{link.text}
+							</Link>
 						</li>
 					);
 				})}
@@ -49,7 +56,15 @@ const Nav = () => {
 								key={link.id}
 								className="flex place-content-center items-center cursor-pointer border rounded-3xl m-2 p-4 flex-auto text-white w-6/12 hover:scale-125 duration-300"
 							>
-								{link.text}
+								<Link
+									to={link.text}
+									onClick={flipVisibility}
+									smooth
+									delay={100}
+									duration={300}
+								>
+									{link.text}
+								</Link>
 							</li>
 						);
 					})}
