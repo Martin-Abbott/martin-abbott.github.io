@@ -122,9 +122,9 @@ const Skills = () => {
 			id="Skills"
 			className="flex flex-wrap py-4 justify-evenly text-center text-black"
 		>
-			<h1 className="text-5xl font-bold pt-20 pb-4 w-[85vw] max-w-[800px]">
+			<h2 className="text-5xl font-bold pt-20 pb-4 w-[85vw] max-w-[800px]">
 				Skills
-			</h1>
+			</h2>
 			<p className="p-8 w-[85vw] max-w-[800px]">
 				I have knowledge and experience in the following languages, packages and
 				environments:
