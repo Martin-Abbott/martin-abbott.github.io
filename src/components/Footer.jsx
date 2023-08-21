@@ -25,6 +25,7 @@ const Footer = () => {
 			{footerLinks.map((link) => {
 				return (
 					<a
+						key={link.id}
 						target="_blank"
 						rel="external"
 						href={link.url}

@@ -2,9 +2,10 @@ import React from "react";
 
 const Projects = () => {
 	return (
-		<div id="Projects">
-			<h2 className="text-5xl font-bold py-40">Projects</h2>
-		</div>
+		<section id="Projects" className="text-center">
+			<h2 className="text-5xl font-bold py-4">Projects</h2>
+			<p>Coming Soon!</p>
+		</section>
 	);
 };
 
