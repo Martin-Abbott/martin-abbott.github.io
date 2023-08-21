@@ -23,7 +23,7 @@ const Nav = () => {
 			id="nav"
 			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed"
 		>
-			<button className="text-3xl ml-1.5 px-16 z-10">
+			<button className="text-3xl ml-1.5 px-16 z-10 hover:scale-125 duration-300">
 				<Link to="Home" smooth delay={100} duration={300}>
 					MA
 				</Link>
