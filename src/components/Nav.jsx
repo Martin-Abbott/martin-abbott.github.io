@@ -6,11 +6,11 @@ const Nav = () => {
 	const [visibility, setVisibility] = useState(false);
 
 	const navLinks = [
-		{ id: 1, text: "Home" },
-		{ id: 2, text: "About" },
-		{ id: 3, text: "Skills" },
-		{ id: 4, text: "Projects" },
-		{ id: 5, text: "Contact" },
+		{ id: "nav1", text: "Home" },
+		{ id: "nav2", text: "About" },
+		{ id: "nav3", text: "Skills" },
+		{ id: "nav4", text: "Projects" },
+		{ id: "nav5", text: "Contact" },
 	];
 
 	const flipVisibility = () => {
@@ -20,7 +20,7 @@ const Nav = () => {
 	return (
 		<nav
 			id="nav"
-			className="flex justify-between items-center w-full h-20 text-white  bg-black font-bold fixed"
+			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed"
 		>
 			<button className="text-3xl ml-1.5 px-16 z-10">MA</button>
 			<ul className="hidden md:flex flex-auto text-center text-xl">
@@ -35,7 +35,10 @@ const Nav = () => {
 					);
 				})}
 			</ul>
-			<button onClick={flipVisibility} className="p-3 md:hidden z-10">
+			<button
+				onClick={flipVisibility}
+				className="p-3 md:hidden z-10  hover:scale-125 duration-300"
+			>
 				{visibility ? <BiX size={35} /> : <BiDotsVertical size={35} />}
 			</button>
 			{visibility && (
