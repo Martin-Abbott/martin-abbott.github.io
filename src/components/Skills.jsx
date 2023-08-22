@@ -129,7 +129,7 @@ const Skills = () => {
 				I have knowledge and experience in the following languages, packages and
 				environments:
 			</p>
-			<ul className="flex flex-wrap self-center text-center justify-evenly text-l max-w-[90vw] px-8">
+			<ul className="flex flex-wrap self-center text-center justify-evenly text-l max-w-[90vw] px-8 overscroll-auto overflow-scroll max-h-[45vh]">
 				{skillList.map((skill) => {
 					return (
 						<li

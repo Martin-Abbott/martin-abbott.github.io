@@ -31,6 +31,7 @@ const Contact = () => {
 			className="text-center my-20 min-h-[80vh] flex flex-col place-items-center place-content-around"
 		>
 			<h2 className="text-5xl font-bold py-12">Contact Me</h2>
+			<p>To get in touch, simply fill out the form and hit send!</p>
 			<form
 				ref={contactForm}
 				onSubmit={sendEmail}
