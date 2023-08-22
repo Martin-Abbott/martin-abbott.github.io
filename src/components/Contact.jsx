@@ -44,7 +44,7 @@ const Contact = () => {
 						name="user_name"
 						placeholder="Your name"
 						required
-						className="p-2 m-auto border rounded-lg"
+						className="p-2 m-auto flex-grow border rounded-lg"
 					/>
 				</section>
 				<section className="p-4">
@@ -54,7 +54,7 @@ const Contact = () => {
 						name="user_email"
 						placeholder="Your email"
 						required
-						className="p-2 m-auto border rounded-lg"
+						className="p-2 m-auto flex-grow border rounded-lg"
 					/>
 				</section>
 				<section className="p-4 w-full flex">

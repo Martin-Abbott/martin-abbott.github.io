@@ -1,28 +1,13 @@
 import React from "react";
-import { ImGithub, ImLinkedin } from "react-icons/im";
+import { FooterLinks } from "../assets/lists/FooterLinks";
 
 const Footer = () => {
-	const footerLinks = [
-		{
-			id: "footer1",
-			text: "LinkedIn",
-			logo: <ImLinkedin size={25} className="block m-auto" />,
-			url: "https://www.linkedin.com/in/martin-abbott-bsc/",
-		},
-		{
-			id: "footer2",
-			text: "GitHub",
-			logo: <ImGithub size={25} className="block m-auto" />,
-			url: "https://github.com/Martin-Abbott",
-		},
-	];
-
 	return (
 		<footer
 			id="Footer"
 			className="flex justify-around items-center w-full h-16 text-white  bg-black font-bold fixed bottom-0 text-center"
 		>
-			{footerLinks.map((link) => {
+			{FooterLinks.map((link) => {
 				return (
 					<a
 						key={link.id}
