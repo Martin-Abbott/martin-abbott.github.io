@@ -1,4 +1,3 @@
-// import React from "react";
 import Portrait2 from "../assets/images/ma-portrait-2.jpg";
 
 const About = () => {
