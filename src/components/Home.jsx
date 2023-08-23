@@ -1,4 +1,3 @@
-import React from "react";
 import Portrait1 from "../assets/images/ma-portrait-1.jpeg";
 
 const Home = () => {
@@ -8,7 +7,9 @@ const Home = () => {
 			className="flex flex-wrap my-20 min-h-[80vh] justify-evenly"
 		>
 			<article id="home-text" className="self-center">
-				<h1 className="text-5xl text-center font-bold p-2">Hi, I'm Martin</h1>
+				<h1 className="text-5xl text-center font-bold p-2">
+					Hi, I&apos;m Martin
+				</h1>
 				<p className="p-2 text-center">I write software</p>
 			</article>
 			<img

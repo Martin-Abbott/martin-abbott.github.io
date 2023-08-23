@@ -1,4 +1,3 @@
-import React from "react";
 import { SkillList } from "../assets/lists/SkillList";
 
 const Skills = () => {

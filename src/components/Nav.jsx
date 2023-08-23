@@ -1,5 +1,4 @@
 import { useState } from "react";
-import React from "react";
 import { BiDotsVertical, BiX } from "react-icons/bi";
 import { Link } from "react-scroll";
 

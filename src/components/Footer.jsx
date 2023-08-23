@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterLinks } from "../assets/lists/FooterLinks";
 
 const Footer = () => {
@@ -12,7 +11,7 @@ const Footer = () => {
 					<a
 						key={link.id}
 						target="_blank"
-						rel="external"
+						rel="noreferrer"
 						href={link.url}
 						className="text-xs  hover:scale-125 duration-300 p-2 justify-center"
 					>
