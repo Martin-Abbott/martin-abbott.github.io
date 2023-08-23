@@ -8,14 +8,14 @@ const Projects = () => {
 			<p className="text-base p-2">
 				Check out some of the projects I've been working on:
 			</p>
-			<ul className="flex self-center text-center text-l max-w-[95vw] p-4 md:m-auto  overflow-x-auto">
+			<ul className="flex self-center text-center text-l max-w-[95vw] p-4 md:m-auto md:max-w-[4/5] overflow-x-auto">
 				{projectList.map((project) => {
 					return (
 						<li
 							key={project.id}
-							className="flex flex-wrap flex-1 justify-self-center place-content-evenly p-2 min-w-[280px] max-w-[500px] h-[60vh] border rounded-xl m-2"
+							className="flex flex-wrap justify-self-center place-content-evenly p-2 min-w-[280px] max-w-[500px] h-[60vh] border rounded-xl m-2"
 						>
-							<h3 className="text-2xl font-bold w-4/5 h-[80px] flex items-center justify-center">
+							<h3 className="text-2xl font-bold w-4/5 h-[80px] flex items-center justify-center self-start">
 								{project.title}
 							</h3>
 							<img src={project.image} alt={`${project.title} showcase`}></img>

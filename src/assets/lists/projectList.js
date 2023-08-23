@@ -5,8 +5,8 @@ import beBoardgame from "../images/be-boardgame.png";
 export const projectList = [
 	{
 		id: "project01",
-		title: "Quote Randomiser",
-		text: "A fun quote randomising mini-app built with jQuery on CodePen",
+		title: "Quote & Colour Randomiser",
+		text: "A fun quote & colour randomising mini-app built with jQuery on CodePen",
 		image: quote,
 		host: "https://codepen.io/Martin-Abbott/full/dyQjWyR",
 		code: "https://codepen.io/Martin-Abbott/pen/dyQjWyR",
