@@ -24,7 +24,7 @@ const Nav = () => {
 			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed top-0 z-10"
 		>
 			<button className="text-3xl ml-1.5 px-16 hover:scale-125 duration-300">
-				<Link to="Home" smooth delay={100} duration={300}>
+				<Link to="Home" offset={-80} smooth delay={100} duration={300}>
 					MA
 				</Link>
 			</button>
@@ -35,7 +35,13 @@ const Nav = () => {
 							key={link.id}
 							className="cursor-pointer flex-auto px-6 text-white hover:scale-125 duration-300"
 						>
-							<Link to={link.text} smooth delay={100} duration={300}>
+							<Link
+								to={link.text}
+								offset={-80}
+								smooth
+								delay={100}
+								duration={300}
+							>
 								{link.text}
 							</Link>
 						</li>
@@ -58,6 +64,7 @@ const Nav = () => {
 							>
 								<Link
 									to={link.text}
+									offset={-80}
 									onClick={flipVisibility}
 									smooth
 									delay={100}

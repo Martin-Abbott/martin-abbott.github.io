@@ -5,15 +5,13 @@ const Skills = () => {
 	return (
 		<section
 			id="Skills"
-			className="flex flex-wrap py-4 justify-evenly text-center text-black"
+			className="flex flex-wrap my-20 min-h-[80vh] justify-evenly text-center text-black place-items-center"
 		>
-			<h2 className="text-5xl font-bold pt-20 pb-4 w-[85vw] max-w-[800px]">
-				Skills
-			</h2>
-			<p className="p-8 w-[85vw] max-w-[800px]">
+			<h2 className="text-5xl font-bold p-4 w-[85vw] max-w-[800px]">Skills</h2>
+			<p className="p-4 w-[85vw] max-w-[800px]">
 				I have worked with following languages, packages and environments:
 			</p>
-			<ul className="flex flex-wrap self-center text-center justify-evenly text-l max-w-[90vw] px-8 overscroll-auto overflow-scroll max-h-[45vh]">
+			<ul className="flex flex-grow flex-wrap self-center text-center justify-evenly text-l max-w-[90vw] p-6 overflow-auto max-h-[50vh]">
 				{SkillList.map((skill) => {
 					return (
 						<li
@@ -26,7 +24,7 @@ const Skills = () => {
 					);
 				})}
 			</ul>
-			<p className="p-8 w-[85vw] max-w-[800px]">
+			<p className="p-4 w-[85vw] max-w-[800px]">
 				This list is not exhaustive, and I am always happy to learn new
 				technologies!
 			</p>
