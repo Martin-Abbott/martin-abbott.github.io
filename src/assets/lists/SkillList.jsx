@@ -88,7 +88,7 @@ export const SkillList = [
 	{
 		id: "skill13",
 		text: "Axios",
-		logo: <SiAxios size={60} className="m-auto group-hover:text-[#3b6be3]" />,
+		logo: <SiAxios size={60} className="m-auto group-hover:text-[#5A29E4]" />,
 	},
 	{
 		id: "skill14",
