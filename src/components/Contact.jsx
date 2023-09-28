@@ -47,7 +47,7 @@ const Contact = () => {
 				className="flex flex-wrap flex-grow justify-evenly p-4 text-black border rounded-2xl w-[85vw] max-w-[600px] self-center m-auto"
 			>
 				<section className="p-2 w-full group">
-					<label className="p-2">
+					<label htmlFor="user_name" className="p-2">
 						Name{" "}
 						<ImCircleDown
 							size={15}
@@ -56,6 +56,7 @@ const Contact = () => {
 					</label>
 					<input
 						type="text"
+						id="user_name"
 						name="user_name"
 						placeholder="Your name"
 						required
@@ -63,7 +64,7 @@ const Contact = () => {
 					/>
 				</section>
 				<section className="p-2 w-full group">
-					<label className="p-2">
+					<label htmlFor="user_email" className="p-2">
 						Email{" "}
 						<ImCircleDown
 							size={15}
@@ -72,6 +73,7 @@ const Contact = () => {
 					</label>
 					<input
 						type="email"
+						id="user_email"
 						name="user_email"
 						placeholder="Your email"
 						required
@@ -79,7 +81,7 @@ const Contact = () => {
 					/>
 				</section>
 				<section className="p-2 w-full flex-grow group">
-					<label className="p-2">
+					<label htmlFor="message" className="p-2">
 						Message{" "}
 						<ImCircleDown
 							size={15}
@@ -88,6 +90,7 @@ const Contact = () => {
 					</label>
 					<textarea
 						name="message"
+						id="message"
 						placeholder="Your message"
 						required
 						className="p-2 border w-full h-4/5 rounded-lg group-hover:border-green-600"
