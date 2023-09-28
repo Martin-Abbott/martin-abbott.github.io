@@ -19,10 +19,16 @@ const ReviewSlider = () => {
 		setCurrentIndex(newIndex);
 	};
 
+	console.log(
+		currentIndex,
+		`${reviewList[currentIndex].firstName} ${reviewList[currentIndex].lastName}`,
+		reviewList[currentIndex].textSnippet.length
+	);
+
 	return (
-		<section className="flex self-center text-center p-2 w-[450px] max-w-[75vw] border rounded-xl m-auto group">
+		<section className="flex self-center text-center p-2 w-[450px] max-w-[85vw] border rounded-xl m-auto group md:max-w-[75vw]">
 			<div className="flex duration-500 p-2 justify-self-center">
-				<article className="flex flex-col text-center m-auto h-[210px]">
+				<article className="flex flex-col text-center m-auto h-[280px] xs:h-[210px]">
 					<p className="m-auto">
 						&quot;{reviewList[currentIndex].textSnippet}&quot;
 					</p>

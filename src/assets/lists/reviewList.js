@@ -37,7 +37,7 @@ export const reviewList = [
 		fullText:
 			"I was in the same cohort as Martin during the intense 3-month Northcoders bootcamp. Martin was very dedicated, polite and a great team player. It was fantastic working with Martin and I look forward to seeing his continued growth and success.",
 		textSnippet:
-			"Martin is very dedicated, polite and a great team player. It was fantastic working with Martin and I look forward to seeing his continued growth and success.",
+			"Martin was very dedicated, polite and a great team player. It was fantastic working with Martin and I look forward to seeing his continued growth and success.",
 		firstName: "Bronwyn",
 		lastName: "Parton",
 		company: "Northcoders",
@@ -59,7 +59,7 @@ export const reviewList = [
 		fullText:
 			"I had the privilege of working closely with Martin during our time at Northcoders. One of the standout qualities I admire in Martin is his ability to think logically and break problems down into smaller sections to find the solution. Martin is creative when it comes to solving problems and good to work with.",
 		textSnippet:
-			"One of the standout qualities I admire in Martin is his ability to think logically and break problems down into smaller sections to find the solution.",
+			"One of the standout qualities I admire in Martin is his ability to think logically and break problems down into smaller sections to find the solution. Martin is creative when it comes to solving problems and good to work with.",
 		firstName: "Elle",
 		lastName: "Carney",
 		company: "Northcoders",
@@ -70,7 +70,7 @@ export const reviewList = [
 		fullText:
 			"I had the pleasure of working with Martin on multiple occasions during our time at Northcoders, and he truly stood out with his exceptional work ethic and positive attitude. Martin's dedication, even when faced with complex problems, was evident in every project we collaborated on. He consistently impressed me, bringing fresh, creative ideas to the table, and often thinking outside the box to find solutions. It was a privilege to work alongside him at Northcoders, and I have no doubt that he will make a great addition to any team.",
 		textSnippet:
-			"Martin consistently impressed me, bringing fresh, creative ideas to the table, and often thinking outside the box to find solutions. It was a privilege to work alongside him.",
+			"Martin's dedication, even when faced with complex problems, was evident in every project we collaborated on. He consistently impressed me, bringing fresh, creative ideas to the table, and often thinking outside the box to find solutions. It was a privilege to work alongside him.",
 		firstName: "Callum",
 		lastName: "Neale",
 		company: "Northcoders",
@@ -92,7 +92,7 @@ export const reviewList = [
 		fullText:
 			"I had the pleasure of pair programming with Martin during our time at Northcoders, and he left a lasting impression. He is a dedicated and creative developer who picks up on new concepts and technologies very quickly. Martin has excellent attention to detail and communication skills, always willing to get involved in group discussions and provide insight, as well as take the opinions of others on board. I have no doubt that Martin will thrive in any software engineering role and be an asset to any team. It was a pleasure working alongside him.",
 		textSnippet:
-			"Martin is a dedicated and creative developer who picks up on new concepts and technologies very quickly. Martin has excellent attention to detail and communication skills, always willing to get involved in group discussions and provide insight, as well as take the opinions of others on board.",
+			"Martin picks up on new concepts and technologies very quickly. He has excellent attention to detail and communication skills, and is always willing to get involved in group discussions and provide insight, as well as take the opinions of others on board.",
 		firstName: "Joe",
 		lastName: "Hill",
 		company: "Northcoders",
