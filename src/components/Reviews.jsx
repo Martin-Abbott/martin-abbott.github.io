@@ -1,6 +1,5 @@
 import Portrait2 from "../assets/images/ma-portrait-2.jpg";
 import ReviewSlider from "./ReviewSlider";
-// import { reviewList } from "../assets/lists/reviewList";
 
 const Reviews = () => {
 	return (
@@ -16,7 +15,7 @@ const Reviews = () => {
 			<section id="review-text" className="self-center max-w-[75vw]">
 				<h2 className="text-5xl text-center font-bold p-2 order-2">Reviews</h2>
 				<p className="p-2 text-center">
-					Here are some reviews and recommendations I've received:
+					Here are some reviews and recommendations I&apos;ve received:
 				</p>
 				<ReviewSlider />
 			</section>

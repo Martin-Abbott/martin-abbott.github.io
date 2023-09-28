@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 import { reviewList } from "../assets/lists/reviewList";
 
@@ -23,7 +23,9 @@ const ReviewSlider = () => {
 		<section className="flex self-center text-center p-2 w-[450px] max-w-[75vw] border rounded-xl m-auto group">
 			<div className="flex duration-500 p-2 justify-self-center">
 				<article className="flex flex-col text-center m-auto h-[210px]">
-					<p className="m-auto">"{reviewList[currentIndex].textSnippet}"</p>
+					<p className="m-auto">
+						&quot;{reviewList[currentIndex].textSnippet}&quot;
+					</p>
 					<section className="flex place-content-between p-2">
 						<button className="text-2xl rounded-full p-2 text-black cursor-pointer focus:shadow-outline hover:scale-125 duration-300">
 							<FaCircleArrowLeft onClick={prevReview} size={30} />

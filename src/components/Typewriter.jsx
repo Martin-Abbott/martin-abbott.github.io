@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes, { string } from "prop-types";
 
 class TypeWriter extends React.PureComponent {
 	constructor(props) {
@@ -10,6 +11,10 @@ class TypeWriter extends React.PureComponent {
 
 		this.typeStuff = this.typeStuff.bind(this);
 	}
+
+	static propTypes = {
+		data: PropTypes.arrayOf(string),
+	};
 
 	componentDidMount() {
 		this.unmounted = false;
