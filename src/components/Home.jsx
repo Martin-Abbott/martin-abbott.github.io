@@ -1,6 +1,16 @@
 import Portrait1 from "../assets/images/ma-portrait-1.jpeg";
+import TypeWriter from "./Typewriter";
 
 const Home = () => {
+	const typeWriter = [
+		"I write software",
+		"I'm a former design engineer",
+		"I love to learn",
+		"I have a keen eye for detail",
+		"I'm a problem solver",
+		"I relish a challenge",
+	];
+
 	return (
 		<section
 			id="Home"
@@ -10,7 +20,7 @@ const Home = () => {
 				<h1 className="text-5xl text-center font-bold p-2">
 					Hi, I&apos;m Martin
 				</h1>
-				<p className="p-2 text-center">I write software</p>
+				<TypeWriter data={typeWriter} />
 			</article>
 			<img
 				src={Portrait1}
