@@ -10,9 +10,12 @@ const Reviews = () => {
 			<img
 				src={Portrait2}
 				alt="Me smiling in front of a timber building"
-				className="max-w-[40vw] min-w-[200px] max-h-[50vh] min-h-[200px] rounded-full m-2 self-center"
+				className="max-w-[40vw] min-w-[180px] max-h-[40vh] min-h-[180px] rounded-full m-2 self-center xs:min-h-[210px] xs:min-w-[210px]"
 			></img>
-			<section id="review-text" className="self-center max-w-[75vw]">
+			<section
+				id="review-text"
+				className="self-center max-w-[85vw] md:max-w-[75vw]"
+			>
 				<h2 className="text-5xl text-center font-bold p-2 order-2">Reviews</h2>
 				<p className="p-2 text-center">
 					Here are some reviews and recommendations I&apos;ve received:
