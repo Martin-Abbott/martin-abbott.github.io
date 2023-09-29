@@ -19,6 +19,7 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
+					console.log(result.text);
 					setDisabled(true);
 				},
 				(error) => {
