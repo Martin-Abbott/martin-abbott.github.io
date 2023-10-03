@@ -131,4 +131,15 @@ export const reviewList = [
 		company: "Northcoders",
 		position: "Student",
 	},
+	{
+		id: "review12",
+		fullText:
+			"I had the pleasure of working with Martin and was continually impressed by his exceptional skills and dedication. Martin consistently delivered outstanding results, showing a keen ability to tackle complex challenges with ease. His strong work ethic and collaborative nature make him an invaluable asset to any team. I wholeheartedly recommend Martin to anyone seeking a highly skilled and reliable professional.",
+		textSnippet:
+			"Martin consistently delivered outstanding results, showing a keen ability to tackle complex challenges with ease. His strong work ethic and collaborative nature make him an invaluable asset to any team. I wholeheartedly recommend Martin to anyone seeking a highly skilled and reliable professional.",
+		firstName: "Davide",
+		lastName: "Castelli",
+		company: "Northcoders",
+		position: "Student",
+	},
 ];
