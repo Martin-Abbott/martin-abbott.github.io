@@ -142,4 +142,15 @@ export const reviewList = [
 		company: "Northcoders",
 		position: "Student",
 	},
+	{
+		id: "review13",
+		fullText:
+			"I worked with Martin closely during a project with Northcoders and he is fantastic to work with. He went above and beyond to get tasks done and was extremely helpful throughout Northcoders.",
+		textSnippet:
+			"Martin is fantastic to work with. He went above and beyond to get tasks done and was extremely helpful throughout",
+		firstName: "Jonathan",
+		lastName: "Brown",
+		company: "Northcoders",
+		position: "Student",
+	},
 ];
