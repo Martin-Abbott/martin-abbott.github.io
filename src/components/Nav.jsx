@@ -50,6 +50,7 @@ const Nav = () => {
 			<button
 				onClick={flipVisibility}
 				className="p-3 md:hidden z-10  hover:scale-125 duration-300"
+				aria-label="Menu"
 			>
 				{visibility ? <BiX size={35} /> : <BiDotsVertical size={35} />}
 			</button>

@@ -27,14 +27,20 @@ const ReviewSlider = () => {
 						&quot;{reviewList[currentIndex].textSnippet}&quot;
 					</p>
 					<section className="flex place-content-between p-2">
-						<button className="text-2xl rounded-full p-2 text-black cursor-pointer focus:shadow-outline hover:scale-125 duration-300">
+						<button
+							className="text-2xl rounded-full p-2 text-black cursor-pointer focus:shadow-outline hover:scale-125 duration-300"
+							aria-label="Previous Review"
+						>
 							<FaCircleArrowLeft onClick={prevReview} size={30} />
 						</button>
 						<p className="self-center">
 							- {reviewList[currentIndex].firstName}{" "}
 							{reviewList[currentIndex].lastName}
 						</p>
-						<button className="text-2xl rounded-full p-2 text-black cursor-pointer focus:shadow-outline hover:scale-125 duration-300">
+						<button
+							className="text-2xl rounded-full p-2 text-black cursor-pointer focus:shadow-outline hover:scale-125 duration-300"
+							aria-label="Next Review"
+						>
 							<FaCircleArrowRight onClick={nextReview} size={30} />
 						</button>
 					</section>
