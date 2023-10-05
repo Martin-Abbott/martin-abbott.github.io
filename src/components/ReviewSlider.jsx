@@ -22,10 +22,10 @@ const ReviewSlider = () => {
 	return (
 		<section className="flex self-center text-center p-2 w-[450px] max-w-[85vw] border rounded-xl m-auto group md:max-w-[75vw]">
 			<div className="flex duration-500 p-2 justify-self-center">
-				<article className="flex flex-col text-center m-auto h-[280px] xs:h-[210px]">
-					<p className="m-auto">
-						&quot;{reviewList[currentIndex].textSnippet}&quot;
-					</p>
+				<article className="flex flex-col text-center m-auto h-[310px] xs:h-[230px]">
+					<q className="m-auto italic">
+						{reviewList[currentIndex].textSnippet}
+					</q>
 					<section className="flex place-content-between p-2">
 						<button
 							className="text-2xl rounded-full p-2 text-black cursor-pointer focus:shadow-outline hover:scale-125 duration-300"
