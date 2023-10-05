@@ -11,6 +11,7 @@ const Reviews = () => {
 				src={Portrait2}
 				alt="Me smiling in front of a timber building"
 				className="max-w-[40vw] min-w-[180px] max-h-[40vh] min-h-[180px] rounded-full m-2 self-center xs:min-h-[210px] xs:min-w-[210px]"
+				loading="lazy"
 			></img>
 			<section
 				id="review-text"
