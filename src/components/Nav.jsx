@@ -23,7 +23,7 @@ const Nav = () => {
 			className="flex justify-between items-center w-full h-16 text-white  bg-black font-bold fixed top-0 z-10"
 		>
 			<button className="text-3xl ml-1.5 px-16 hover:scale-125 duration-300">
-				<Link to="Home" offset={-80} smooth delay={100} duration={300}>
+				<Link to="Home" offset={-80} smooth={true} delay={100} duration={300}>
 					MA
 				</Link>
 			</button>
@@ -37,7 +37,7 @@ const Nav = () => {
 							<Link
 								to={link.text}
 								offset={-80}
-								smooth
+								smooth={true}
 								delay={100}
 								duration={300}
 							>
@@ -50,6 +50,7 @@ const Nav = () => {
 			<button
 				onClick={flipVisibility}
 				className="p-3 md:hidden z-10  hover:scale-125 duration-300"
+				aria-label="Menu"
 			>
 				{visibility ? <BiX size={35} /> : <BiDotsVertical size={35} />}
 			</button>
@@ -65,7 +66,7 @@ const Nav = () => {
 									to={link.text}
 									offset={-80}
 									onClick={flipVisibility}
-									smooth
+									smooth={true}
 									delay={100}
 									duration={300}
 								>
