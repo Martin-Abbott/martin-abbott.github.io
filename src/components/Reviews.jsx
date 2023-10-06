@@ -9,7 +9,7 @@ const Reviews = () => {
 		>
 			<img
 				src={democracyDog}
-				alt="A cute puppy sat  a polling station"
+				alt="A cute puppy sat outside a polling station"
 				className="max-w-[40vw] min-w-[180px] max-h-[40vh] min-h-[180px] rounded-full m-2 self-center xs:min-h-[210px] xs:min-w-[210px] lg:max-w-[60vw] lg:max-h-[60vh]"
 				loading="lazy"
 			></img>
