@@ -1,4 +1,4 @@
-import Portrait2 from "../assets/images/ma-portrait-2.jpg";
+import democracyDog from "../assets/images/democracy-dog.jpeg";
 import ReviewSlider from "./ReviewSlider";
 
 const Reviews = () => {
@@ -8,9 +8,9 @@ const Reviews = () => {
 			className="flex flex-wrap justify-evenly my-20 min-h-[80vh]"
 		>
 			<img
-				src={Portrait2}
-				alt="Me smiling in front of a timber building"
-				className="max-w-[40vw] min-w-[180px] max-h-[40vh] min-h-[180px] rounded-full m-2 self-center xs:min-h-[210px] xs:min-w-[210px]"
+				src={democracyDog}
+				alt="A cute puppy sat  a polling station"
+				className="max-w-[40vw] min-w-[180px] max-h-[40vh] min-h-[180px] rounded-full m-2 self-center xs:min-h-[210px] xs:min-w-[210px] lg:max-w-[60vw] lg:max-h-[60vh]"
 				loading="lazy"
 			></img>
 			<section
