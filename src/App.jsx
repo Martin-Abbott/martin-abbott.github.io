@@ -1,12 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import Skills from "./components/Skills";
-import Reviews from "./components/Reviews";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import WholePage from "./components/WholePage";
+import Automation from "./components/Automation";
 
 ReactGA.initialize("G-XYKKFRZLKV");
 
@@ -20,15 +16,14 @@ const App = () => {
 	}, []);
 
 	return (
-		<div>
-			<Nav />
-			<Home />
-			<Skills />
-			<Reviews />
-			<Projects />
-			<Contact />
-			<Footer />
-		</div>
+		<BrowserRouter>
+			<>
+				<Routes>
+					<Route path="/" element={<WholePage />} />
+					<Route path="/engineering-automation" element={<Automation />} />
+				</Routes>
+			</>
+		</BrowserRouter>
 	);
 };
 
