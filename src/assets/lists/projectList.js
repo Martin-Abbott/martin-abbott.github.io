@@ -2,6 +2,7 @@ import solar from "../images/solar-system.png";
 import quote from "../images/quote.png";
 import feBoardgame from "../images/fe-boardgame.png";
 import beBoardgame from "../images/be-boardgame.png";
+import automation from "../images/automation.png";
 
 export const projectList = [
 	{
@@ -35,5 +36,13 @@ export const projectList = [
 		image: beBoardgame,
 		host: "https://games-review-database-server.onrender.com/api/",
 		code: "https://github.com/Martin-Abbott/MA-BE-NC-GAMES",
+	},
+	{
+		id: "project05",
+		title: "Automation Blog Post",
+		text: "An article discussing the use of automation within engineering environments",
+		image: automation,
+		host: "https://martin-abbott.dev/engineering-automation",
+		code: "https://github.com/Martin-Abbott/engineering-automation",
 	},
 ];
