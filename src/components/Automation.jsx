@@ -1,4 +1,3 @@
-import React from "react";
 import SparseNav from "./SparseNav";
 import AutomationHead from "./AutomationHead";
 import WhyAutomate from "./WhyAutomate";
