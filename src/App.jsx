@@ -20,7 +20,7 @@ const App = () => {
 			<>
 				<Routes>
 					<Route path="/" element={<WholePage />} />
-					<Route path="/engineering-automation" element={<Automation />} />
+					<Route path="/automation" element={<Automation />} />
 				</Routes>
 			</>
 		</BrowserRouter>
